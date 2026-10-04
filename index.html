@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Undangan Pernikahan - A & B">
+<title>Undangan Pernikahan | Arif & Nadia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="opening" id="opening">
+  <div class="opening-card">
+    <div class="label">The Wedding Of</div>
+    <h1 class="names">Aulia <span class="amp">&</span> Fendy</h1>
+    <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+    <p style="color:var(--muted);font-size:13px;margin-top:5px">Dengan hormat, kami mengundang Anda untuk hadir di hari bahagia kami.</p>
+    <button class="btn" onclick="openInvitation()">Buka Undangan</button>
+  </div>
+</div>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="small">The Wedding Of</div>
+    <h1 class="names">Aulia <span class="amp">&</span> Fendy</h1>
+    <div class="date">SABTU · 07 NOVEMBER 2026</div>
+    <a class="btn" href="#details">Lihat Undangan</a>
+  </div>
+</header>
+
+<main>
+<section class="section" id="details">
+ <div class="container center">
+  <div class="label">Assalamu'alaikum Warahmatullahi Wabarakatuh</div>
+  <div class="content-card">
+   <p class="quote">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang di antara kamu.”</p>
+   <p style="margin-top:15px;color:var(--muted);font-size:12px">QS. Ar-Rum: 21</p>
+  </div>
+ </div>
+</section>
+
+<section class="section" style="background:#f1ece4">
+ <div class="container center">
+  <div class="label">Mempelai</div>
+  <h2 class="title">Dengan penuh kebahagiaan</h2>
+  <div class="couple">
+   <div class="person">
+    <h3>Aulia Nuraini</h3>
+    <p>Putra dari Bapak Sobri<br>& Ibu Dewi Adawiyah</p>
+   </div>
+   <div class="divider">&</div>
+   <div class="person">
+    <h3>Fendy</h3>
+    <p>Putri dari Bapak Budi Santoso<br>& Ibu Dewi Lestari</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container center">
+  <div class="label">Save The Date</div>
+  <h2 class="title">Menuju Hari Bahagia</h2>
+  <div class="countdown">
+   <div class="count"><b id="days">00</b><span>Hari</span></div>
+   <div class="count"><b id="hours">00</b><span>Jam</span></div>
+   <div class="count"><b id="minutes">00</b><span>Menit</span></div>
+   <div class="count"><b id="seconds">00</b><span>Detik</span></div>
+  </div>
+  <div class="events">
+   <div class="event">
+    <div class="label">Akad Nikah</div>
+    <h3>Sabtu, 07 November 2026</h3>
+    <div class="time">08.00 WIB – SELESAI</div>
+    <p>Masjid Al-Ikhlas<br>Jl. Contoh No. 123, Tangerang</p>
+    <a class="btn" target="_blank" href="https://maps.google.com/?q=Masjid+Al-Ikhlas+Tangerang">Buka Maps</a>
+   </div>
+   <div class="event">
+    <div class="label">Resepsi</div>
+    <h3>Sabtu, 07 November 2026</h3>
+    <div class="time">11.00 – 14.00 WIB</div>
+    <p>Gedung Serbaguna Bahagia<br>Jl. Contoh No. 456, Tangerang</p>
+    <a class="btn" target="_blank" href="https://maps.google.com/?q=Gedung+Serbaguna+Bahagia+Tangerang">Buka Maps</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section" style="background:#f1ece4">
+ <div class="container center">
+  <div class="label">Our Story</div>
+  <h2 class="title">Sebuah cerita sederhana</h2>
+  <p class="story">Berawal dari sebuah pertemuan sederhana, kemudian tumbuh menjadi rasa yang membawa kami pada satu keputusan besar: melangkah bersama dalam ikatan pernikahan. Dengan memohon doa dan restu, kami mengundang Anda untuk menjadi bagian dari hari istimewa kami.</p>
+  <div class="gallery">
+   <div class="photo"><img src="foto 1.jpeg" alt="Foto 01"></div><div class="photo"><img src="foto 2.jpeg" alt="Foto 02"></div><div class="photo"><img src="foto 3.jpeg" alt="Foto 03"></div>
+   <div class="photo"><img src="foto 4.jpeg" alt="Foto 04"></div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container center">
+  <div class="label">RSVP</div>
+  <h2 class="title">Konfirmasi Kehadiran</h2>
+  <p class="subtitle">Mohon konfirmasi kehadiran Anda melalui WhatsApp.</p>
+  <form class="rsvp" onsubmit="sendRSVP(event)">
+   <input id="guest" required placeholder="Nama Anda">
+   <textarea id="message" placeholder="Ucapan untuk kedua mempelai"></textarea>
+   <button class="btn" type="submit">Kirim via WhatsApp</button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="footer">
+ <div class="label" style="color:#aaa">Terima Kasih</div>
+ <div class="names">Arif <span class="amp">&</span> Nadia</div>
+ <p style="font-size:12px;color:#aaa">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir.</p>
+ <p style="margin-top:25px;font-size:10px;color:#777">Made with love · 2026</p>
+</footer>
+
+<button class="music" id="musicBtn" onclick="toggleMusic()" aria-label="Musik"><span>♪</span></button>
+<audio id="music" loop>
+  <source src="instrumental.mp3" type="audio/mpeg">
+  <!-- Ganti dengan file musik sendiri, contoh: src="music.mp3" -->
+</audio>
+
+<script>
+const weddingDate = new Date("2026-11-21T08:00:00+07:00").getTime();
+
+function openInvitation(){
+  const audio = document.getElementById("music");
+    const button = document.getElementById("musicBtn");
+
+    audio.play()
+        .then(() => {
+            playing = true;
+            button.classList.add("playing");
+        })
+        .catch(error => {
+            console.error("Audio error:", error);
+        });
+
+  document.getElementById('opening').classList.add('hide');
+  document.body.style.overflow='auto';
+
+
+}
+document.body.style.overflow='hidden';
+
+function countdown(){
+ const now=Date.now(), d=weddingDate-now;
+ if(d<=0)return;
+ document.getElementById('days').textContent=Math.floor(d/86400000).toString().padStart(2,'0');
+ document.getElementById('hours').textContent=Math.floor(d/3600000%24).toString().padStart(2,'0');
+ document.getElementById('minutes').textContent=Math.floor(d/60000%60).toString().padStart(2,'0');
+ document.getElementById('seconds').textContent=Math.floor(d/1000%60).toString().padStart(2,'0');
+}
+setInterval(countdown,1000); countdown();
+
+function sendRSVP(e){
+ e.preventDefault();
+ const name=document.getElementById('guest').value;
+ const msg=document.getElementById('message').value || 'InsyaAllah saya akan hadir. Mohon doa restunya.';
+ const phone='6281234567890'; // GANTI nomor WhatsApp tujuan
+ const text=`Halo, saya ${name}.%0A%0A${encodeURIComponent(msg)}%0A%0AUndangan Arif & Nadia`;
+ window.open(`https://wa.me/${phone}?text=${text}`,'_blank');
+}
+
+//let playing=false;
+
+function toggleMusic() {
+    const audio = document.getElementById("music");
+    const button = document.getElementById("musicBtn");
+
+    if (audio.paused) {
+        audio.play()
+            .then(() => {
+                playing = true;
+                button.classList.add("playing");
+            })
+            .catch((error) => {
+                console.error("Audio error:", error);
+                alert("Musik gagal diputar. Pastikan file instrumental.mp3 ada di folder yang sama dengan index.html.");
+            });
+    } else {
+        audio.pause();
+        playing = false;
+        button.classList.remove("playing");
+    }
+}
+
+
+</script>
+</body>
+</html>
