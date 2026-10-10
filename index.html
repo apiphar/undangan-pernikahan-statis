@@ -111,6 +111,48 @@
   </form>
  </div>
 </section>
+
+<section class="gift-section" id="wedding-gift">
+  <div class="gift-container">
+
+      <p class="gift-subtitle">A LITTLE GIFT OF LOVE</p>
+      <h2>Wedding Gift</h2>
+
+      <p class="gift-description">
+          Doa restu Anda merupakan hadiah terindah bagi kami.
+          Namun, apabila Bapak/Ibu/Saudara/i berhalangan hadir
+          dan ingin mengirimkan tanda kasih, dapat melalui
+          informasi rekening berikut.
+      </p>
+
+      <div class="bank-card">
+          <div class="bank-header">
+              <span class="bank-name">BANK BCA</span>
+              <span class="bank-label">WEDDING GIFT</span>
+          </div>
+
+          <p class="account-label">Nomor Rekening</p>
+          <h3 id="accountNumber">1234567890</h3>
+
+          <p class="account-owner">
+              a.n. Aulia
+          </p>
+
+          <button
+              type="button"
+              class="copy-button"
+              onclick="copyAccount()">
+              Salin Nomor Rekening
+          </button>
+      </div>
+
+      <p class="gift-closing">
+          Terima kasih atas doa, perhatian, dan kasih sayang
+          yang diberikan kepada kami.
+      </p>
+
+  </div>
+</section>
 </main>
 
 <footer class="footer">
@@ -159,13 +201,29 @@ function countdown(){
 }
 setInterval(countdown,1000); countdown();
 
-function sendRSVP(e){
- e.preventDefault();
- const name=document.getElementById('guest').value;
- const msg=document.getElementById('message').value || 'InsyaAllah saya akan hadir. Mohon doa restunya.';
- const phone='6281318931839'; // GANTI nomor WhatsApp tujuan
- const text=`Halo, saya ${name}.%0A%0A${encodeURIComponent(msg)}%0A%0AUndangan Arif & Nadia`;
- window.open(`https://wa.me/${phone}?text=${text}`,'_blank');
+function sendRSVP(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('guest').value.trim();
+    const msg = document.getElementById('message').value.trim()
+        || 'InsyaAllah saya akan hadir.';
+
+    const phone = '6281511522780';
+
+    const text = `Assalamu'alaikum Warahmatullahi Wabarakatuh.
+
+Halo, saya ${name}.
+
+${msg}
+
+Terima kasih atas undangannya.
+Semoga Allah SWT senantiasa melimpahkan keberkahan untuk Aulia & Fendy.
+
+Wassalamu'alaikum Warahmatullahi Wabarakatuh.`;
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, '_blank');
 }
 
 //let playing=false;

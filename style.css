@@ -142,3 +142,122 @@ textarea{min-height:110px;resize:vertical}
       transform: rotate(360deg);
     }
   }
+
+
+  .gift-section {
+    padding: 70px 20px;
+    background: #f8f5f0;
+    text-align: center;
+    color: #55483d;
+}
+
+.gift-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.gift-subtitle {
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.gift-section h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+.gift-description {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #766b61;
+    margin-bottom: 30px;
+}
+
+.bank-card {
+    background: #fff;
+    border: 1px solid #e7ded2;
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(80, 60, 40, 0.06);
+}
+
+.bank-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eee7df;
+}
+
+.bank-name {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.bank-label {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #a08b75;
+}
+
+.account-label {
+    font-size: 11px;
+    color: #8b8175;
+    margin: 22px 0 8px;
+}
+
+.bank-card h3 {
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.account-owner {
+    font-size: 13px;
+    margin: 10px 0 22px;
+    color: #766b61;
+}
+
+.copy-button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b7a38c;
+    border-radius: 6px;
+    background: #fff;
+    color: #55483d;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background: #f8f5f0;
+}
+
+.gift-closing {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #766b61;
+    margin-top: 26px;
+}
+
+@media (max-width: 480px) {
+    .gift-section {
+        padding: 55px 18px;
+    }
+
+    .gift-section h2 {
+        font-size: 29px;
+    }
+
+    .bank-card h3 {
+        font-size: 21px;
+    }
+}
