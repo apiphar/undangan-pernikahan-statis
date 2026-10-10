@@ -45,13 +45,13 @@
   <h2 class="title">Dengan penuh kebahagiaan</h2>
   <div class="couple">
    <div class="person">
-    <h3>Aulia Nuraini</h3>
-    <p>Putra dari Bapak Sobri<br>& Ibu Dewi Adawiyah</p>
+    <h3>Aulia Nuraini, S.T.P</h3>
+    <p>Putra Bungsu dari Bpk. Sobri, S.Pd<br>& Ibu Dewi Adawiyah</p>
    </div>
    <div class="divider">&</div>
    <div class="person">
-    <h3>Fendy</h3>
-    <p>Putri dari Bapak Budi Santoso<br>& Ibu Dewi Lestari</p>
+    <h3>Fendy Ahmad Fauzi, S.E, M.M</h3>
+    <p>Putri Kedua dari Bpk. Budi Soewanto, S.E<br>& Ibu Endang Setyawati</p>
    </div>
   </div>
  </div>
@@ -71,16 +71,18 @@
    <div class="event">
     <div class="label">Akad Nikah</div>
     <h3>Sabtu, 07 November 2026</h3>
-    <div class="time">08.00 WIB – SELESAI</div>
-    <p>Masjid Al-Ikhlas<br>Jl. Contoh No. 123, Tangerang</p>
-    <a class="btn" target="_blank" href="https://maps.google.com/?q=Masjid+Al-Ikhlas+Tangerang">Buka Maps</a>
+    <div class="time">09.00 WIB</div>
+    <p>Perumahan Villa Balaraja,<br>Lapangan Balai Rt. 010 & Rt. 09 / RW. 05
+      <br>Desa Saga Kec. Balaraja Kab. Tangerang-Banten</p>
+    <a class="btn" target="_blank" href="https://maps.app.goo.gl/LjVpG7qTc7yE7SAs8">Buka Maps</a>
    </div>
    <div class="event">
     <div class="label">Resepsi</div>
     <h3>Sabtu, 07 November 2026</h3>
-    <div class="time">11.00 – 14.00 WIB</div>
-    <p>Gedung Serbaguna Bahagia<br>Jl. Contoh No. 456, Tangerang</p>
-    <a class="btn" target="_blank" href="https://maps.google.com/?q=Gedung+Serbaguna+Bahagia+Tangerang">Buka Maps</a>
+    <div class="time">11.00 – SELESAI</div>
+    <p>Perumahan Villa Balaraja,<br>Lapangan Balai Rt. 010 & Rt. 09 / RW. 05
+      <br>Desa Saga Kec. Balaraja Kab. Tangerang-Banten</p>
+    <a class="btn" target="_blank" href="https://maps.app.goo.gl/LjVpG7qTc7yE7SAs8">Buka Maps</a>
    </div>
   </div>
  </div>
@@ -92,8 +94,7 @@
   <h2 class="title">Sebuah cerita sederhana</h2>
   <p class="story">Berawal dari sebuah pertemuan sederhana, kemudian tumbuh menjadi rasa yang membawa kami pada satu keputusan besar: melangkah bersama dalam ikatan pernikahan. Dengan memohon doa dan restu, kami mengundang Anda untuk menjadi bagian dari hari istimewa kami.</p>
   <div class="gallery">
-   <div class="photo"><img src="foto 1.jpeg" alt="Foto 01"></div><div class="photo"><img src="foto 2.jpeg" alt="Foto 02"></div><div class="photo"><img src="foto 3.jpeg" alt="Foto 03"></div>
-   <div class="photo"><img src="foto 4.jpeg" alt="Foto 04"></div>
+   <div class="photo"><img src="foto 1.jpeg" alt="Foto 01"></div><div class="photo"><img src="foto 2.jpeg" alt="Foto 02"></div>
   </div>
  </div>
 </section>
@@ -126,7 +127,7 @@
 </audio>
 
 <script>
-const weddingDate = new Date("2026-11-21T08:00:00+07:00").getTime();
+const weddingDate = new Date("2026-11-07T09:00:00+07:00").getTime();
 
 function openInvitation(){
   const audio = document.getElementById("music");
@@ -162,7 +163,7 @@ function sendRSVP(e){
  e.preventDefault();
  const name=document.getElementById('guest').value;
  const msg=document.getElementById('message').value || 'InsyaAllah saya akan hadir. Mohon doa restunya.';
- const phone='6281234567890'; // GANTI nomor WhatsApp tujuan
+ const phone='6281318931839'; // GANTI nomor WhatsApp tujuan
  const text=`Halo, saya ${name}.%0A%0A${encodeURIComponent(msg)}%0A%0AUndangan Arif & Nadia`;
  window.open(`https://wa.me/${phone}?text=${text}`,'_blank');
 }
