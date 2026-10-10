@@ -140,26 +140,51 @@
           informasi rekening berikut.
       </p>
 
-      <div class="bank-card">
-          <div class="bank-header">
-              <span class="bank-name">BANK BCA</span>
-              <span class="bank-label">WEDDING GIFT</span>
-          </div>
-
-          <p class="account-label">Nomor Rekening</p>
-          <h3 id="accountNumber">1234567890</h3>
-
-          <p class="account-owner">
-              a.n. Aulia
-          </p>
-
-          <button
-              type="button"
-              class="copy-button"
-              onclick="copyAccount()">
-              Salin Nomor Rekening
-          </button>
+      
+<div class="bank-card">
+  <div class="atm-card">
+    <div class="atm-top">
+      <div class="atm-brand">
+        <span class="atm-brand-name">BCA</span>
+        <span class="atm-brand-sub">WEDDING GIFT</span>
       </div>
+
+      <div class="contactless">
+        
+      </div>
+    </div>
+
+    <div class="atm-chip">
+      <div class="chip-line"></div>
+      <div class="chip-line"></div>
+      <div class="chip-line"></div>
+      <div class="chip-line"></div>
+    </div>
+
+    <div class="atm-number" id="accountNumber">
+      1234 5678 90
+    </div>
+
+    <div class="atm-bottom">
+      <div class="atm-owner">
+        <span class="atm-name">AULIA</span>
+      </div>
+
+      <div class="atm-network">
+        <span class="network-circle circle-one"></span>
+        <span class="network-circle circle-two"></span>
+      </div>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="copy-button"
+    onclick="copyAccount()">
+    <span>▣</span> Salin Nomor Rekening
+  </button>
+</div>
+
 
       <p class="gift-closing">
           Terima kasih atas doa, perhatian, dan kasih sayang

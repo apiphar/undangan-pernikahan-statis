@@ -1459,4 +1459,214 @@ input[type="radio"] {
       opacity: 0.7;
     }
   }
+
+  
+/* ATM CARD - WEDDING GIFT */
+.bank-card {
+    width: 100%;
+    max-width: 390px;
+    margin: 30px auto;
+  }
+  
+  .atm-card {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    padding: 22px 24px;
+    overflow: hidden;
+    border-radius: 18px;
+    color: #fffaf0;
+    background:
+      radial-gradient(
+        circle at 90% 10%,
+        rgba(194, 169, 112, .25),
+        transparent 38%
+      ),
+      linear-gradient(135deg, #253b50, #102438 65%, #172b3d);
+    box-shadow:
+      0 18px 35px rgba(18, 35, 49, .22),
+      inset 0 1px 0 rgba(255, 255, 255, .18);
+  }
+  
+  /* Decorative curves */
+  .atm-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    height: 250px;
+    right: -100px;
+    bottom: -145px;
+    border: 1px solid rgba(218, 195, 143, .28);
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 18px rgba(218, 195, 143, .035),
+      0 0 0 38px rgba(218, 195, 143, .035),
+      0 0 0 58px rgba(218, 195, 143, .035);
+    pointer-events: none;
+  }
+  
+  .atm-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .atm-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .atm-brand-name {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  
+  .atm-brand-sub {
+    font-size: 8px;
+    letter-spacing: 2.4px;
+    color: #d7c49a;
+  }
+  
+  .contactless {
+    font-size: 21px;
+    font-weight: 400;
+    color: #d7c49a;
+    transform: rotate(90deg);
+  }
+  
+  .atm-chip {
+    width: 43px;
+    height: 32px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid #c7ad72;
+    background: linear-gradient(135deg, #f1dfaa, #b99855);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+  }
+  
+  .chip-line {
+    border: 1px solid rgba(112, 83, 36, .5);
+  }
+  
+  .atm-number {
+    position: relative;
+    margin-top: 18px;
+    font-family: monospace;
+    font-size: clamp(18px, 5vw, 23px);
+    letter-spacing: 2px;
+    white-space: nowrap;
+    color: #fffdf7;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  }
+  
+  .atm-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 16px;
+    gap: 10px;
+  }
+  
+  .atm-owner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .atm-caption {
+    color: #d7c49a;
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+  
+  .atm-name {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  
+  .atm-network {
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+    padding-bottom: 2px;
+  }
+  
+  .network-circle {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .circle-one {
+    background: rgba(216, 179, 105, .9);
+  }
+  
+  .circle-two {
+    margin-left: -10px;
+    background: rgba(255, 246, 222, .75);
+    mix-blend-mode: screen;
+  }
+  
+  /* Copy button */
+  .copy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 16px;
+    padding: 13px 18px;
+    border: 1px solid #d7c49a;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text, #34372f);
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: background .25s ease, color .25s ease;
+  }
+  
+  .copy-button:hover {
+    background: #253b50;
+    color: #fffaf0;
+    border-color: #253b50;
+  }
+  
+  .copy-button:active {
+    transform: scale(.98);
+  }
+  
+  /* Mobile */
+  @media (max-width: 420px) {
+    .atm-card {
+      padding: 20px;
+      border-radius: 15px;
+    }
+  
+    .atm-chip {
+      margin-top: 16px;
+    }
+  
+    .atm-number {
+      margin-top: 16px;
+      letter-spacing: 1px;
+    }
+  
+    .atm-bottom {
+      margin-top: 14px;
+    }
+  }
+  
   
