@@ -365,7 +365,60 @@ function copyAccount() {
     });
 }
 
+// ========================================
+// FADE-UP ANIMATION ON SCROLL
+// ========================================
 
+document.addEventListener("DOMContentLoaded", function () {
+  const animatedElements = document.querySelectorAll(`
+    #details .label,
+    #details .content-card,
+    .section .container > .label,
+    .section .container > .title,
+    .section .container > .subtitle,
+    .person,
+    .divider,
+    .countdown,
+    .event,
+    .story,
+    .gallery .photo,
+    .rsvp,
+    .gift-subtitle,
+    .gift-section h2,
+    .gift-description,
+    .bank-card,
+    .gift-closing,
+    .footer .label,
+    .footer .names,
+    .footer p
+  `);
+
+  animatedElements.forEach((element, index) => {
+    element.classList.add("reveal");
+
+    // Jeda pendek untuk elemen yang muncul berurutan
+    if (element.matches(".person, .event, .gallery .photo, .bank-card")) {
+      element.style.transitionDelay =
+        `${(Array.from(element.parentElement.children)
+          .filter(child => child.matches(".person, .event, .gallery .photo, .bank-card"))
+          .indexOf(element)) * 0.12}s`;
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.25,
+  rootMargin: "0px 0px -60px 0px"
+});
+
+  animatedElements.forEach(element => observer.observe(element));
+});
 
 </script>
 </body>
