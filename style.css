@@ -65,16 +65,19 @@ a{text-decoration:none;color:inherit}
 .map-box span{font-family:"Cormorant Garamond";font-size:30px;color:#8e8376}
 .gallery{
     display:grid !important;
-    grid-template-columns:1fr !important;
-    gap:12px;
-    margin-top:40px
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .photo {
     width:100%;
     max-width: 100% !important;
     box-sizing: border-box;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: auto;
     background: linear-gradient(135deg, #ddd2c4, #f4efe8);
     display: flex;
     align-items: center;
@@ -88,11 +91,26 @@ a{text-decoration:none;color:inherit}
   
   .photo img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     display: block;
   }
 
+/* Khusus browser HP */
+@media screen and (max-width: 600px) {
+    .gallery {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 0;
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .gallery .photo,
+    .gallery .photo img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 .rsvp{max-width:650px;margin:40px auto 0}
